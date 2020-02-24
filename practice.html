@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Matric Grades </title>
+</head>
+<body>
+<script>
+  var x = prompt("Please enter your matric marks");
+var y = prompt("Please enter overall/total matric marks");
+
+var z = (x/y)*100;
+var final = z.toFixed(2);
+
+if (z != isNaN){
+  if((final <=100) && (final >= 90)){
+    alert("Congratulations! You have achieved First Class with A1 Grade with! "+final+"%");
+  }
+  else if((final <= 89)&& (final >= 80)){
+    alert("You have achieved A+ Grade with "+final+"%");
+  } 
+  else if ((final <= 79)&& (final >= 70)){
+    alert("You have acheived A Grade with "+final+"%");
+  }
+  else if ((final <= 69) && (final >= 60)){
+    alert("You have achieved B Grade with "+final+"%");
+  }
+    
+  else if ((final <= 59)&& (final >= 50)){
+    alert("You have achieved C Grade with "+final+"%");
+  }
+  else if ((final <= 49)&& (final >= 40)){
+   alert("You have achieved D Grade with "+final+"%");
+}
+   else if (final < 40){
+   alert("Fail with "+final+"%");
+  }
+  else{
+    alert ("Invalid entry");
+  }
+}
+
+  
+  
+  
+  </script>  
+</body>
+</html>
